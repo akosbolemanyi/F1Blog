@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewBlogActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavender"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:title="Új blog"
+            app:titleMarginStart="30dp" />
+
+        <View
+            android:id="@+id/v_view"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:background="@drawable/stroke_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <ImageView
+                    android:id="@+id/v_image_thumbnail"
+                    android:layout_width="351dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/f1"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/v_blog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp"
+                android:text="Cím"
+                android:textColor="@color/black"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/v_blog_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp"
+                android:text="Leírás"
+                android:textColor="@color/black"
+                android:minHeight="150dp"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/v_blog_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp"
+                android:text="Kategória"
+                android:textColor="@color/black"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/v_blog_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp"
+                android:text="Szerző"
+                android:textColor="@color/black"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/v_blog_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp"
+                android:text="Dátum"
+                android:textColor="@color/black"
+                android:padding="15dp" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/v_btn_publish"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                android:background="@drawable/rounded_button"-->
+            <!--                android:text="Vissza"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="27sp" />-->
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
