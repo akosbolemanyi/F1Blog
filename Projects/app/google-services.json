@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545067943677",
+    "project_id": "f1blog-b95e8",
+    "storage_bucket": "f1blog-b95e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545067943677:android:13b1958ebb7bd1e98f6094",
+        "android_client_info": {
+          "package_name": "com.example.f1blog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6PhBzWubBsGK1Y5SGjiHQb2ZtwKcBsEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

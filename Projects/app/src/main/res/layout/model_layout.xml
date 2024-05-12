@@ -1,0 +1,71 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/rTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="24sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/rDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_below="@id/rTitle"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:id="@+id/rCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rDescription"
+            android:layout_marginBottom="8dp"
+            android:text="Category"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rCategory"/>
+
+        <TextView
+            android:id="@+id/rDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Date"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_below="@id/rAuthor"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
